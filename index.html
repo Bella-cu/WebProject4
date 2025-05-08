@@ -6,38 +6,169 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Naawi-Oodena.ca</title>
     <link rel="stylesheet" href="/CSS/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Oswald:200,300,regular,500,600,700" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
     <style>
         #image {
             width: 100%;
-            height: 88vh;
-            overflow: hidden;
+            height: auto;
+            display: flex;
+            justify-self: center;
         }
+
+        .article {
+            margin: 10% 8% 8% 8%;
+            display: flex;
+            align-items: center;
+            justify-self: center;
+        }
+
+
+        .article h1 {
+            font-size: 2em;
+            margin-bottom: 3%;
+        }
+
+        .article-img {
+            margin-right: 20px;
+            margin-left: 20px;
+        }
+
+        #comunity-spaces {
+            margin-top: 5%;
+            display: flex;
+            gap: 20%;
+            justify-content: center;
+        }
+
+        #xtras {
+            display: flex;
+            justify-content: space-evenly;
+            margin: 5%;
+        }
+
+        /*
+        main {
+            width: 80%;
+            box-shadow: 0 4px 8px 0 #d5d0d0, 0 6px 20px 0 #959595;
+            justify-self: center;
+            padding: 5% 1% 10% 1%;
+            overflow: visible;
+        }*/
     </style>
 </head>
 
 <body>
-    <nav id="nav">
-        <h1>Naawi-Oodena</h1>
-        <img src="Images/logo.png">
-    </nav>
-    <nav>
-        <ul id="nav2">
-            <li><a href="/index.html">Who Are We?</a></li>
-            <li><a href="/about.html">Community</a></li>
-            <li><a href="/contact.html">Lifestyle</a></li>
-            <li><a href="/services.html">Buisness</a></li>
-            <li><a href="/events.html">Contact</a></li>
-        </ul>
-    </nav>
+    <header>
+        <nav id="nav">
+            <h1>Naawi-Oodena</h1>
+            <img src="Images/logo.png" alt="Naawi-Oodena Logo">
+        </nav>
+    </header>
+    <ul id="nav2">
+        <li><a href="/index.html">Who Are We?</a></li>
+        <li><a href="/about.html">Community</a></li>
+        <li><a href="/contact.html">Lifestyle</a></li>
+        <li><a href="/services.html">Business</a></li>
+        <li><a href="/events.html">Contact</a></li>
+    </ul>
     <figure id="image">
         <img src="Images/First-Nations.png" alt="Naawi-Oodena Centre" style="width:100%;">
-        <figcaption>Naawi-Oodena Centre</figcaption>
     </figure>
+    <hr />
     <main>
-        <section id="what-is-it">
-            <img>
+        <section class="article">
+            <figure>
+                <img class="article-img" src="Images/What.png" alt="What is it?">
+            </figure>
+            <div class="what-text">
+                <h1>What is Naawi-Oodena?</h1>
+                <p>Naawi-Oodena is a community centre that serves as a hub for First Nations people in the area. It
+                    offers a
+                    variety of services and programs to support the well-being and development of the community.</p>
+            </div>
+        </section>
+
+        <section class="colored">
+            <div class="article">
+                <figure>
+                    <img class="article-img" src="Images/placeholder.png">
+                </figure>
+                <div class="what-text">
+                    <h1>Lower Density Areas</h1>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Reprehenderit, aliquid? Minima eius
+                        aliquam, quae et mollitia incidunt facilis laborum velit eligendi dignissimos assumenda ratione,
+                        officiis nulla consequuntur eum? Laboriosam, et?</p>
+                </div>
+            </div>
+            <div class="article" style="flex-direction: row-reverse;">
+                <figure>
+                    <img class="article-img" src="Images/placeholder.png">
+                </figure>
+                <div class="what-text">
+                    <h1>Medium Density Areas</h1>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Reprehenderit, aliquid? Minima eius
+                        aliquam, quae et mollitia incidunt facilis laborum velit eligendi dignissimos assumenda ratione,
+                        officiis nulla consequuntur eum? Laboriosam, et?</p>
+                </div>
+            </div>
+        </section>
+        <article>
+            <h1>Community Spaces</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum facilis ducimus, accusantium reprehenderit
+                nihil cupiditate temporibus veritatis reiciendis consectetur alias magni id esse autem blanditiis ipsa
+                qui enim eum perspiciatis!
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Beatae doloremque dolores adipisci in ea unde
+                velit ratione? Aspernatur quo at atque consequuntur ipsam error sit quia! Rerum blanditiis fugiat
+                beatae?
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam quibusdam totam magni incidunt, numquam
+                doloremque veritatis rerum laborum? Molestiae quis temporibus sapiente unde a enim quaerat cupiditate
+                alias quas veniam.
+            </p>
+            <div id="comunity-spaces">
+                <img src="Images/placeholder.png">
+                <img src="Images/placeholder.png">
+                <img src="Images/placeholder.png">
+            </div>
+        </article>
+        <hr />
+        <section id="xtras">
+            <img src="Images/placeholder.png">
+            <img src="Images/placeholder.png">
+            <img src="Images/placeholder.png">
+            <img src="Images/placeholder.png">
         </section>
     </main>
+    <hr />
+    <footer>
+        <div class="open-footer">Hover to expand<i class="fas fa-chevron-down"></i></div>
+        <div class="footer">
+            <div class="footer-section">
+                <img src="Images/logo.png">
+                <p style="text-align: center;">*A space created by and for First Nations people.*</p>
+            </div>
+            <div class="footer-section">
+                <h3>Pages</h3>
+                <ul>
+                    <li><a href="/index.html">Who Are We?</a></li>
+                    <li><a href="/about.html">Community</a></li>
+                    <li><a href="/contact.html">Lifestyle</a></li>
+                    <li><a href="/services.html">Business</a></li>
+                    <li><a href="/events.html">Contact</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-section">
+                <h3>Contact</h3>
+                <p>Email: info@naawi-oodena.ca</p>
+                <p>Phone: (204) 555-1234</p>
+            </div>
+
+        </div>
+        <p style="text-align: center; margin-top: 20px;">&copy; 2025 Naawi-Oodena. All rights reserved.</p>
+    </footer>
+
 </body>
 
 </html>
