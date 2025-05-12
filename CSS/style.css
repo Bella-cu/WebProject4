@@ -40,7 +40,7 @@ hr {
 
 #nav2 {
     display: grid;
-    grid-template-columns: repeat(5, 1fr);
+    grid-template-columns: repeat(4, 1fr);
     height: 50px;
     width: 100%;
     margin: 0;
@@ -98,6 +98,7 @@ body {
     width: 100%;
     color: aliceblue;
     align-content: center;
+    padding: 7% 0% 7% 0%;
 }
 
 article {
