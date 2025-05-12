@@ -86,10 +86,13 @@ body {
     padding: 0;
 }
 
-* {
-    margin: 0;
-    letter-spacing: 3px;
-    line-height: 1.6;
+.post {
+    display: flex;
+    justify-content: space-evenly;
+    margin-bottom: 0%;
+    height: 100px;
+    padding-top: 7%;
+    background-color: #293570;
 }
 
 .colored {
@@ -98,8 +101,32 @@ body {
     width: 100%;
     color: aliceblue;
     align-content: center;
-    padding: 7% 0% 7% 0%;
+    padding: 0% 0% 4% 0%;
 }
+
+.colored {
+    text-align: center;
+    margin: -10px 0px 0px 0px;
+}
+
+.colored p {
+    padding: 5% 8% 0% 8%;
+}
+
+.postcard {
+    background-color: aliceblue;
+    padding: 1%;
+    padding-bottom: 0;
+    color: #0a0f24;
+}
+
+
+* {
+    margin: 0;
+    letter-spacing: 3px;
+    line-height: 1.6;
+}
+
 
 article {
     justify-items: center;

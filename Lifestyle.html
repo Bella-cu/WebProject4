@@ -10,23 +10,28 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
     <style>
         .Gallery {
-            grid-template-rows: repeat(2, 200px);
-            grid-template-columns: repeat(6, 200px);
-            display: grid;
+            display: flex;
             justify-content: center;
+            gap: 10%;
+            padding-top: 10%;
+            margin-top: -1%;
+            margin-bottom: -9%;
+            width: 100%;
+            height: fit-content;
+        }
+
+        .Gallery div {
             width: 100%;
         }
 
         .Gallery img {
-            width: 200px;
-            height: 200px;
+            width: 300px;
+            height: 300px;
+            border-radius: 50%;
             border: 10px solid #293570;
         }
 
-        .colored {
-            text-align: center;
-            margin: 20px 0px 20px 0px;
-        }
+
 
         #sports-recreation>div {
             display: flex;
@@ -62,40 +67,12 @@
     <figure id="image">
         <img src="Images/First-Nations.png" alt="Naawi-Oodena Centre" style="width:100%;">
     </figure>
-    <hr />
     <main>
-        <article>
-            <h1>Life at Naawi-Oodena</h1>
-            <section class="Gallery">
-                <a href="Images/Gallery.jpg">
-                    <img src="Images/Gallery.jpg">
-                </a>
-                <a href="Images/Gallery.jpg">
-                    <img src="Images/Gallery.jpg">
-                </a> <a href="Images/Gallery.jpg">
-                    <img src="Images/Gallery.jpg">
-                </a> <a href="Images/Gallery.jpg">
-                    <img src="Images/Gallery.jpg">
-                </a>
-                <a href="Images/Gallery.jpg">
-                    <img src="Images/Gallery.jpg">
-                </a> <a href="Images/Gallery.jpg">
-                    <img src="Images/Gallery.jpg">
-                </a> <a href="Images/Gallery.jpg">
-                    <img src="Images/Gallery.jpg">
-                </a> <a href="Images/Gallery.jpg">
-                    <img src="Images/Gallery.jpg">
-                </a> <a href="Images/Gallery.jpg">
-                    <img src="Images/Gallery.jpg">
-                </a> <a href="Images/Gallery.jpg">
-                    <img src="Images/Gallery.jpg">
-                </a> <a href="Images/Gallery.jpg">
-                    <img src="Images/Gallery.jpg">
-                </a> <a href="Images/Gallery.jpg">
-                    <img src="Images/Gallery.jpg">
-                </a>
-            </section>
-        </article>
+        <section class="Gallery">
+            <img src="Images/placeholder.png">
+            <img src="Images/placeholder.png">
+            <img src="Images/placeholder.png">
+        </section>
         <section class="colored">
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam corporis accusamus dolorem. Rerum,
                 odio temporibus necessitatibus, minima quia aut beatae aspernatur pariatur adipisci natus, debitis
@@ -122,7 +99,24 @@
                     exercitationem earum.</p>
             </div>
         </article>
+        <hr />
     </main>
+    <div class="find-more">
+        <section class="colored post">
+            <div class="postcard">
+                <img src="Images/placeholder.png">
+                <h1>Name</h1>
+            </div>
+            <div class="postcard">
+                <img src="Images/placeholder.png">
+                <h1>Name</h1>
+            </div>
+            <div class="postcard">
+                <img src="Images/placeholder.png">
+                <h1>Name</h1>
+            </div>
+        </section>
+    </div>
     <hr />
     <footer>
         <div class="open-footer">Hover to expand<i class="fa-solid fa-arrow-up"></i></div>
