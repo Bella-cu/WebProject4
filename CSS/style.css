@@ -6,6 +6,46 @@ p {
     font-size: 1.2rem;
 }
 
+.resources {
+    background-image: linear-gradient(#5a659b, #1f2856);
+    text-align: center;
+    color: aliceblue;
+    text-decoration: 6px underline #1f28566f;
+    padding-top: 2%;
+}
+
+.resources-link {
+    display: flex;
+    justify-content: space-evenly;
+    padding: 2% 0% 2% 0%;
+    width: 100%;
+    border-bottom: 15px solid #1f2856;
+}
+
+.resources-link>img {
+    animation: pulse 2s infinite, linear;
+    animation-delay: 0s;
+    border-radius: 5%;
+    width: 250px;
+    height: 150px;
+    border: 5px solid #272e4f;
+}
+
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(1.06);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
+
+
 #nav {
     background-color: #293570;
     height: 80px;
@@ -86,14 +126,6 @@ body {
     padding: 0;
 }
 
-.post {
-    display: flex;
-    justify-content: space-evenly;
-    margin-bottom: 0%;
-    height: 100px;
-    padding-top: 7%;
-    background-color: #293570;
-}
 
 .colored {
     background-color: #293570;
@@ -111,13 +143,6 @@ body {
 
 .colored p {
     padding: 5% 8% 0% 8%;
-}
-
-.postcard {
-    background-color: aliceblue;
-    padding: 1%;
-    padding-bottom: 0;
-    color: #0a0f24;
 }
 
 
@@ -222,6 +247,7 @@ footer:hover {
     justify-self: center;
     z-index: 0;
 }
+
 .article {
     margin: 10% 8% 8% 8%;
     display: flex;
