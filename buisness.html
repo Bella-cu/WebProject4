@@ -9,6 +9,11 @@
     <link href="https://fonts.googleapis.com/css?family=Oswald:200,300,regular,500,600,700" rel="stylesheet" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
     <style>
+        .article img {
+            height: 330px;
+            width: 250px;
+        }
+
         .campus {
             display: flex;
             justify-content: center;
@@ -19,7 +24,7 @@
             margin-bottom: 1%;
             width: 40%;
             height: 300px;
-            border: 15px solid #1c244b;
+            border: 5px solid #1c244b;
             border-radius: 10px;
         }
 
@@ -27,19 +32,22 @@
             display: flex;
             justify-self: center;
             text-align: center;
-            width: 87%;
             margin-bottom: 5%;
         }
-        #shopping{
+
+        #shopping-img {
             display: flex;
             justify-content: center;
-            gap:2%;
             margin-top: 9%;
             margin-bottom: 9%;
+            gap: 2%;
         }
-        #shopping img{
-            width: 230px;
-            height: 230px;
+
+        #shopping p {
+            text-align: center;
+            padding: 5%;
+            margin-top: -10%;
+            margin-bottom: 10%;
         }
     </style>
 </head>
@@ -52,15 +60,22 @@
         </nav>
     </header>
     <ul id="nav2">
+<<<<<<< HEAD
         <li><a href="/index.html">Community</a></li>
         <li><a href="/Lifestyle.html">Lifestyle</a></li>
         <li><a href="/buisness.html">Business</a></li>
         <li><a href="/events.html">Contact</a></li>
+=======
+        <li><a href="/index.html">Home</a></li>
+        <li><a href="/Lifestyle.html">Lifestyle</a></li>
+        <li><a href="/buisness.html">Business</a></li>
+        <li><a href="/contact.html">Contact</a></li>
+>>>>>>> 3791bb2616302325b14a8210f42cb899d8783446
     </ul>
     <figure id="image">
         <img src="Images/Buisiness.png" alt="Naawi-Oodena Centre" style="width:100%;">
     </figure>
-    <h1 class="title">Buisness in Naawi-Oodena</h1>
+    <h1 class="title">Buisiness</h1>
     <hr />
     <main>
         <div class="article">
@@ -87,7 +102,7 @@
         </div>
         <section class="colored ">
             <div class="campus">
-                <img src="Images/Campus.png">
+                <img src="Images/Campus1.jpg">
             </div>
             <p id="campus-txt">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto aperiam nostrum asperiores iste libero,
@@ -96,15 +111,31 @@
             </p>
         </section>
         <section id="shopping">
+            <div id="shopping-img">
+                <img src="Images/Shoppers.png">
+                <img src="Images/SKL.png">
+                <img src="Images/placeholder.png">
+                <img src="Images/placeholder.png">
+                <img src="Images/placeholder.png">
+            </div>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Pariatur explicabo blanditiis, placeat adipisci
+                quod natus vel voluptatem nihil ex unde, nulla eum voluptatum architecto illo commodi magnam maxime.
+                Iste, explicabo!</p>
+        </section>
+        <hr />
+        <section class="resources">
+            <h1>More Resources</h1>
+            <div class="resources-link">
                 <img src="Images/placeholder.png">
                 <img src="Images/placeholder.png">
                 <img src="Images/placeholder.png">
                 <img src="Images/placeholder.png">
-                <img src="Images/placeholder.png">
+            </div>
         </section>
     </main>
+    <hr />
     <footer>
-        <div class="open-footer">Hover to expand<i class="fas fa-chevron-down"></i></div>
+        <div class="open-footer">Hover to expand<i class="fa-solid fa-arrow-up"></i></div>
         <div class="footer">
             <div class="footer-section">
                 <img src="Images/logo.png">
@@ -115,7 +146,7 @@
                 <ul>
                     <li><a href="/index.html">Who Are We?</a></li>
                     <li><a href="/about.html">Community</a></li>
-                    <li><a href="/contact.html">Lifestyle</a></li>
+                    <li><a href="/Lifestyle.html">Lifestyle</a></li>
                     <li><a href="/services.html">Business</a></li>
                     <li><a href="/events.html">Contact</a></li>
                 </ul>
@@ -123,13 +154,14 @@
 
             <div class="footer-section">
                 <h3>Contact</h3>
-                <p>Email: info@naawi-oodena.ca</p>
-                <p>Phone: (204) 555-1234</p>
+                <p>Email: naawi-oodena@gmail.com</p>
+                <p>Phone: (204) 000 000</p>
             </div>
 
         </div>
         <p style="text-align: center; margin-top: 20px;">&copy; 2025 Naawi-Oodena. All rights reserved.</p>
     </footer>
+
 </body>
 
 </html>
