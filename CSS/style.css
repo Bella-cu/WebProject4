@@ -1,5 +1,5 @@
 h1 {
-    font-size: 45px;
+    font-size: 3.5rem;
     font-weight: 500;
     font-family: 'Oswald', sans-serif;
 }
@@ -199,6 +199,20 @@ body {
     padding: 0;
 }
 
+.bottom {
+    flex-direction: row-reverse;
+    text-align: right;
+}
+
+.bottom,
+h1 {
+    margin: 0% 1% 0% 0%;
+}
+
+.bottom,
+p {
+    margin: 0% -6% 0% 0%;
+}
 
 .colored {
     background-color: #293570;
@@ -207,15 +221,13 @@ body {
     color: aliceblue;
     align-content: center;
     padding: 0% 0% 4% 0%;
-}
-
-.colored {
-    text-align: center;
+    text-align: left;
     margin: -10px 0px 0px 0px;
 }
 
+
 .colored p {
-    padding: 5% 8% 0% 8%;
+    padding: 1% 8% 0% 0%;
 }
 
 
