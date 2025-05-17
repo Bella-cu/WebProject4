@@ -199,19 +199,13 @@ body {
     padding: 0;
 }
 
-.bottom {
-    flex-direction: row-reverse;
-    text-align: right;
+
+.bottomh1 {
+    margin: 0% 0% 0% 2%;
 }
 
-.bottom,
-h1 {
-    margin: 0% 1% 0% 0%;
-}
-
-.bottom,
-p {
-    margin: 0% -6% 0% 0%;
+.bottom{
+    margin: 0% 0% 0% 2%;
 }
 
 .colored {
@@ -227,7 +221,7 @@ p {
 
 
 .colored p {
-    padding: 1% 8% 0% 0%;
+    padding: 1%;
 }
 
 
