@@ -2,178 +2,195 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Naawi-Oodena.ca</title>
-    <link rel="stylesheet" href="/CSS/style.css">
+    <link rel="icon" href="Images/logo.png" type="Images/png">
+    <link rel="stylesheet" href="/CSS/style.css" />
     <link href="https://fonts.googleapis.com/css?family=Oswald:200,300,regular,500,600,700" rel="stylesheet" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
     <style>
-        #comunity-spaces {
+        #community-spaces {
             margin-top: 5%;
             display: flex;
             gap: 10%;
             justify-content: center;
+            align-items: center;
         }
 
-        #community-spaces,
-        img {
-            width: 350px;
+        #community-spaces img {
+            max-width: 250px;
+            width: 25%;
         }
 
-        #community-spaces,
-        h1 {
+        #community-spaces h1 {
             margin-bottom: 2%;
         }
-
-        /*
-        main {
-            width: 80%;
-            box-shadow: 0 4px 8px 0 #d5d0d0, 0 6px 20px 0 #959595;
-            justify-self: center;
-            padding: 5% 1% 10% 1%;
-            overflow: visible;
-        }*/
     </style>
 </head>
 
 <body>
     <header>
         <nav id="nav">
-            <h1>Naawi-Oodena</h1>
-            <a href="https://treaty1.ca/naawi-oodena/" target="_blank">
-                <img src="Images/logo.png" alt="Naawi-Oodena Logo"></a>
+            <h1 tabindex="0">Naawi-Oodena</h1>
+            <a href="https://treaty1.ca/naawi-oodena/" target="_blank"
+                aria-label="Visit Naawi-Oodena at Treaty 1 website">
+                <img src="Images/logo.png" alt="Naawi-Oodena logo" tabindex="0" />
+            </a>
         </nav>
     </header>
+
     <ul id="nav2">
-        <li><a href="/index.html" class="active">Home</a></li>
-        <li><a href="/Lifestyle.html">Lifestyle</a></li>
-        <li><a href="/buisness.html">Business</a></li>
-        <li><a href="/contact.html">Contact</a></li>
+        <li><a href="/index.html" class="active" tabindex="0">Home</a></li>
+        <li><a href="/Lifestyle.html" tabindex="0">Lifestyle</a></li>
+        <li><a href="/business.html" tabindex="0">Business</a></li>
+        <li><a href="/contact.html" tabindex="0">Contact</a></li>
     </ul>
+
     <figure id="image">
-        <img src="Images/Home.png" alt="Naawi-Oodena Centre" style="width:100%;">
+        <img src="Images/Home.png" alt="Aerial view of Naawi-Oodena" style="width:100%;" tabindex="0" />
     </figure>
-    <h1 class="title">"Centre of the heart and community"</h1>
+
+    <h1 class="title" tabindex="0">"Centre of the heart and community"</h1>
     <hr />
+
     <main>
-        <section class="article">
+        <section class="article" tabindex="0">
             <figure>
-                <img class="article-img" src="Images/What.png" alt="What is it?">
+                <img class="article-img" src="Images/What.png" alt="Illustration of Naawi-Oodena cultural site"
+                    tabindex="0" />
             </figure>
             <div>
-                <h1 style="margin-top: -5;">What is Naawi-Oodena?</h1>
-                <p>Naawi-Oodena, meaning "centre of the heart and community" in Anishinaabemowin, is Canada's largest
-                    urban reserve, located in southwest Winnipeg. Spanning approximately 160 acres, it is
-                    jointly managed by all seven Treaty 1 First Nations and the Canada Lands Company. Formerly the
+                <h1 tabindex="0">What is Naawi-Oodena?</h1>
+                <p tabindex="0">Naawi-Oodena, meaning "centre of the heart and community" in Anishinaabemowin, is
+                    Canada's largest urban reserve, located in southwest Winnipeg. Spanning approximately 160 acres, it
+                    is jointly managed by all seven Treaty 1 First Nations and the Canada Lands Company. Formerly the
                     Kapyong Barracks, this site has been transformed into a thriving community that blends Indigenous
-                    culture with modern urban living. Naawi-Oodenan aims to generate economic investments and connect
-                    communities together.
-                </p>
+                    culture with modern urban living.</p>
             </div>
         </section>
 
-        <section class="colored">
+        <section class="colored" tabindex="0">
             <div class="article">
                 <figure>
-                    <img class="article-img" src="Images/lower (1).png">
+                    <img class="article-img" src="Images/lower (1).png" alt="Low-density residential housing"
+                        tabindex="0" />
                 </figure>
                 <div class="what-text">
-                    <h1>Lower Density Areas</h1>
-                    <p>At Naawi-Oodena, lower density areas focus on creating quiet, spacious neighborhoods. These parts
-                        of the community have single-family homes with yards and plenty of green space, giving families
-                        more privacy while staying connected to nature and culture.</p>
+                    <h1 tabindex="0">Lower Density Areas</h1>
+                    <p tabindex="0">At Naawi-Oodena, lower density areas focus on creating quiet, spacious
+                        neighborhoods. These parts of the community have single-family homes with yards and plenty of
+                        green space, giving families more privacy while staying connected to nature and culture.</p>
                 </div>
             </div>
+
             <div class="article" style="flex-direction: row-reverse;">
                 <figure>
-                    <img class="article-img" src="Images/medium (1).png">
+                    <img class="article-img" src="Images/medium (1).png" alt="Medium-density townhomes" tabindex="0" />
                 </figure>
                 <div class="what-text">
-                    <h1 class="bottomh1">Medium Density Areas</h1>
-                    <p class="bottom">Medium density areas in Naawi-Oodena include townhouses, duplexes, and low-rise apartments. These
-                        homes are built closer together than in low-density areas but still offer some private space.
-                        They are designed to support more people while keeping a strong sense of community and easy
-                        access to parks, shops, and gathering places.</p>
+                    <h1 tabindex="0">Medium Density Areas</h1>
+                    <p tabindex="0">Medium density areas in Naawi-Oodena include townhouses, duplexes, and low-rise
+                        apartments. These homes are built closer together but still offer some private space. They
+                        support more residents while fostering a strong sense of community and proximity to parks and
+                        shops.</p>
                 </div>
             </div>
         </section>
-        <article>
-            <h1>Community Spaces</h1>
-            <p style="text-align: center; margin: 0;">Naawi-Oodena includes many thoughtful community spaces that bring people
-                together and celebrate Indigenous
-                culture. These spaces include parks, walking trails, gathering areas, and playgrounds where families and
-                children can enjoy the outdoors. There are also green spaces for ceremonies, events, and everyday
-                relaxation. These open areas help create a strong sense of community and allow people to connect with
-                nature and each other in a peaceful, welcoming environment.
 
-                In addition to outdoor spaces, Naawi-Oodena will feature cultural centers and buildings where people can
-                learn, share stories, and take part in workshops or celebrations. These spaces are designed by and for
-                Indigenous people, making sure they reflect traditional knowledge and values. By blending natural spaces
-                with cultural gathering places, Naawi-Oodena supports both community life and cultural identity in a
-                modern, urban setting.
-            </p>
-            <div id="comunity-spaces">
-                <img src="Images/community2.png">
-                <img src="Images/community1.png">
-                <img src="Images/community3.png">
+        <article tabindex="0">
+            <h1 style="text-align: center;" tabindex="0">Community Spaces</h1>
+            <hr style="height: 5px; margin: -1% 0 .5% 0;" />
+            <p style="text-align: center; margin: 0;" tabindex="0">Naawi-Oodena includes many thoughtful community
+                spaces that bring people together and celebrate Indigenous culture. These include parks, walking trails,
+                gathering areas, playgrounds, and green spaces for ceremonies and events. Cultural centers and buildings
+                will provide opportunities for learning and celebration rooted in Indigenous traditions.</p>
+            <div tabindex="0" id="community-spaces">
+                <img src="Images/community2.png" alt="Park area with trees and gathering benches" tabindex="0" />
+                <img src="Images/community1.png" alt="Children's playground with seating areas" tabindex="0" />
+                <img src="Images/community3.png" alt="Walking trails surrounded by greenery" tabindex="0" />
             </div>
         </article>
-        <hr />
-        <hr />
-        <section class="resources">
-            <h1>More Resources</h1>
-            <div class="resources-link">
-                <div id="events">
-                    <h1>Events</h1>
-                    <img src="Images/powwow.png">
-                </div>
-                <div id="developments">
-                    <h1>Developments</h1>
-                    <img src="Images/development.png">
-                </div>
-                <div id="program">
-                    <h1>Programs</h1>
-                    <img src="Images/program.png">
-                </div>
-                <div id="map">
-                    <h1>Location</h1>
-                    <iframe
-                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d18473.468582741756!2d-97.21504584805956!3d49.855162021599355!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x52ea74eab82e68cb%3A0x4ffc4bf8a3a9cf2f!2sNaawi-Oodena%2C%20Winnipeg%2C%20MB!5e0!3m2!1sen!2sca!4v1747280866685!5m2!1sen!2sca"
-                        allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-                </div>
-            </div>
-        </section>
     </main>
-    <footer>
-        <div class="open-footer">Hover to expand<i class="fa-solid fa-arrow-up"></i></div>
+
+    <hr />
+    <hr />
+
+    <section class="resources" aria-label="Additional resources section" tabindex="0">
+        <h1 tabindex="0">More Resources</h1>
+        <div class="resources-link">
+            <div id="events">
+                <h1>Events</h1>
+                <a href="https://treaty1.ca/event/4th-annual-anishinaabe-days-celebration/" target="_blank"
+                    aria-label="View details for the Anishinaabe Days Celebration" tabindex="0">
+                    <img src="Images/powwow.png" alt="Anishinaabe Days Celebration Powwow" />
+                </a>
+            </div>
+            <div id="developments">
+                <h1>Developments</h1>
+                <a href="https://treaty1.ca/wp-content/uploads/2021/11/Kapyong-Barracks-Master-Plan.pdf" target="_blank"
+                    aria-label="Read the Kapyong Barracks Master Plan (PDF)" tabindex="0">
+                    <img src="Images/development.png" alt="Kapyong Barracks Master Plan PDF" />
+                </a>
+            </div>
+            <div id="program">
+                <h1>Programs</h1>
+                <a href="https://treaty1.ca/wp-content/uploads/2024/03/Unlocking-Opportunities-at-Naawi-Oodena-Promo-Package-FINAL.pdf"
+                    target="_blank" aria-label="View Unlocking Opportunities Program Package PDF" tabindex="0">
+                    <img src="Images/program.png" alt="Unlocking Opportunities at Naawi-Oodena pdf" />
+                </a>
+            </div>
+            <div id="map" tabindex="0">
+                <h1>Location</h1>
+                <iframe title="Naawi-Oodena location on Google Maps" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d82316.15003631638!2d-97.207645!3d49.854112!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x52ea74eab82e68cb%3A0x4ffc4bf8a3a9cf2f!2sNaawi-Oodena%2C%20Winnipeg%2C%20MB!5e0!3m2!1sen!2sca!4v1747729267770!5m2!1sen!2sca" width="250" height="200" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+    </section>
+
+    <footer tabindex="0">
+        <div class="open-footer">Hover to expand<i class="fa-solid fa-arrow-up" aria-hidden="true"></i></div>
         <div class="footer">
-            <div class="footer-section">
-                <img src="Images/logo.png">
-                <p style="text-align: center;">*A space created by and for First Nations people.*</p>
+            <div class="footer-section" tabindex="0">
+                <a href="https://treaty1.ca/naawi-oodena/" target="_blank" aria-label="Visit Naawi-Oodena homepage">
+                    <img src="Images/logo.png" alt="Naawi-Oodena logo" tabindex="0" />
+                </a>
+                <p style="text-align: center;" tabindex="0">Centre of the heart and community</p>
             </div>
             <div class="footer-section">
-                <h3>Pages</h3>
+                <h3 tabindex="0">Pages</h3>
                 <ul>
-                    <li><a href="/index.html">Who Are We?</a></li>
-                    <li><a href="/about.html">Community</a></li>
-                    <li><a href="/Lifestyle.html">Lifestyle</a></li>
-                    <li><a href="/services.html">Business</a></li>
-                    <li><a href="/events.html">Contact</a></li>
+                    <li><a href="/index.html" tabindex="0">Home</a></li>
+                    <li><a href="/Lifestyle.html" tabindex="0">Lifestyle</a></li>
+                    <li><a href="/business.html" tabindex="0">Business</a></li>
+                    <li><a href="/contact.html" tabindex="0">Contact</a></li>
                 </ul>
             </div>
-
-            <div class="footer-section">
-                <h3>Contact</h3>
-                <p>Email: naawi-oodena@gmail.com</p>
-                <p>Phone: (204) 000 000</p>
+            <div class="footer-section" tabindex="0">
+                <h3 tabindex="0">Contact</h3>
+                <p>Email: <a href="mailto:naawi-oodena@gmail.com" tabindex="0">naawi-oodena@gmail.com</a>
+                </p>
+                <p tabindex="0">Phone: (204) 000 000</p>
+                <section class="follow">
+                    <a href="https://www.facebook.com" target="_blank" aria-label="Visit Naawi-Oodena on Facebook"
+                        tabindex="0">
+                        <img src="Images/facebook.png" alt="Facebook logo" />
+                    </a>
+                    <a href="https://www.instagram.com/" target="_blank" aria-label="Visit Naawi-Oodena on Instagram"
+                        tabindex="0">
+                        <img src="Images/instagram.png" alt="Instagram logo" />
+                    </a>
+                    <a href="https://www.linkedin.com/" target="_blank" aria-label="Visit Naawi-Oodena on LinkedIn"
+                        tabindex="0">
+                        <img src="Images/linkedin.png" alt="LinkedIn logo" />
+                    </a>
+                    <a href="https://x.com/" target="_blank" aria-label="Visit Naawi-Oodena on X (formerly Twitter)"
+                        tabindex="0">
+                        <img src="Images/insta.png" alt="X logo" />
+                    </a>
+                </section>
             </div>
-
         </div>
-        <p style="text-align: center; margin-top: 20px;">&copy; 2025 Naawi-Oodena. All rights reserved.</p>
+        <p style="text-align: center; margin-top: -2%;" tabindex="0">&copy; 2025 Naawi-Oodena. All rights reserved.</p>
     </footer>
-
 </body>
 
 </html>

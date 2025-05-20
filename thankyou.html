@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!--
+        Meta tags for accessibility and responsive design.
+    -->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Naawi-Oodena.ca</title>
+    <!--
+        Linking to external stylesheet
+    -->
+    <link rel="stylesheet" href="/CSS/style.css" />
+        <link rel="icon" href="Images/logo.png" type="Images/png">
+    <link href="https://fonts.googleapis.com/css?family=Oswald:200,300,regular,500,600,700" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+    <style>
+        main {
+            display: flex; /* Use flexbox for layout */
+            flex-direction: column; /* Stack vertically */
+            justify-content: center; /* Center content vertically */
+            align-items: center; /* Center content horizontally */
+            text-align: center; /* Center text inside main */
+            margin-top: 5%; /* Add space above main content */
+            margin-bottom: 3%; /* Add space below main content */
+        }
+
+        /* Envelope icon: visually represents successful form submission */
+        #icon {
+            width: 15%; /* Responsive width for icon */
+            max-width: 250px; /* Prevent icon from getting too large */
+            border: none; /* Removes any default border */
+        }
+
+        /*visually appealing and interactive return button */
+        button {
+            background-color: #293570; /* Deep blue background for brand consistency */
+            color: white; /* White text for contrast */
+            padding: 12px 20px; /* Comfortable clickable area */
+            margin-top: 8%; /* Space above button */
+            border: 3px solid #0a0530; /* Dark border for definition */
+            border-radius: 5px; /* Rounded corners for modern look */
+            cursor: pointer; /* Pointer cursor on hover for interactivity */
+            font-weight: bold; /* Bold text for emphasis */
+            font-size: 16px; /* Readable font size */
+            box-shadow: 0 4px 10px #6c75a1; /* Subtle shadow for depth */
+            transition: transform 0.5s ease; /* Smooth scaling on hover */
+        }
+
+        button:hover {
+            transform: scale(1.1); /* Slightly enlarge button on hover */
+            background-color: #1d254c; /* Darker blue for active state */
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav id="nav">
+            <h1 tabindex="0">Naawi-Oodena</h1>
+            <a href="https://treaty1.ca/naawi-oodena/" target="_blank"
+                aria-label="Visit Naawi-Oodena at Treaty 1 website">
+                <img src="Images/logo.png" alt="Naawi-Oodena logo" tabindex="0" />
+            </a>
+        </nav>
+    </header>
+
+    <!-- Confirm message and return button -->
+<main tabindex="0">
+    <!-- Envelope icon visually confirms successful submission -->
+    <img id="icon" src="Images/mail.png" alt="Envelope icon indicating successful form submission" tabindex="0">
+    
+    <!-- Thanks for user feedback -->
+    <h1 tabindex="0">Thanks for submitting!</h1>
+    
+    <!-- Confirmation of successful message delivery -->
+    <h2 tabindex="0">Your message has been sent successfully.</h2>
+    
+    <!-- Button to return to homepage, wrapped in a link -->
+    <a href="index.html" aria-label="Return to the Naawi-Oodena homepage">
+        <button type="button">Return to Homepage</button>
+    </a>
+</main>
+
+    <footer tabindex="0">
+        <div class="open-footer">Hover to expand<i class="fa-solid fa-arrow-up" aria-hidden="true"></i></div>
+        <div class="footer">
+            <div class="footer-section" tabindex="0">
+                <a href="https://treaty1.ca/naawi-oodena/" target="_blank" aria-label="Visit Naawi-Oodena homepage">
+                    <img src="Images/logo.png" alt="Naawi-Oodena logo" tabindex="0" />
+                </a>
+                <p style="text-align: center;" tabindex="0">Centre of the heart and community</p>
+            </div>
+            <div class="footer-section">
+                <h3 tabindex="0">Pages</h3>
+                <ul>
+                    <li><a href="/index.html" tabindex="0">Home</a></li>
+                    <li><a href="/Lifestyle.html" tabindex="0">Lifestyle</a></li>
+                    <li><a href="/business.html" tabindex="0">Business</a></li>
+                    <li><a href="/contact.html" tabindex="0">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-section" tabindex="0">
+                <h3 tabindex="0">Contact</h3>
+                <p>Email: <a href="mailto:naawi-oodena@gmail.com" tabindex="0">naawi-oodena@gmail.com</a>
+                </p>
+                <p tabindex="0">Phone: (204) 000 000</p>
+                <section class="follow">
+                    <a href="https://www.facebook.com" target="_blank" aria-label="Visit Naawi-Oodena on Facebook"
+                        tabindex="0">
+                        <img src="Images/facebook.png" alt="Facebook logo" />
+                    </a>
+                    <a href="https://www.instagram.com/" target="_blank" aria-label="Visit Naawi-Oodena on Instagram"
+                        tabindex="0">
+                        <img src="Images/instagram.png" alt="Instagram logo" />
+                    </a>
+                    <a href="https://www.linkedin.com/" target="_blank" aria-label="Visit Naawi-Oodena on LinkedIn"
+                        tabindex="0">
+                        <img src="Images/linkedin.png" alt="LinkedIn logo" />
+                    </a>
+                    <a href="https://x.com/" target="_blank" aria-label="Visit Naawi-Oodena on X (formerly Twitter)"
+                        tabindex="0">
+                        <img src="Images/insta.png" alt="X logo" />
+                    </a>
+                </section>
+            </div>
+        </div>
+        <p style="text-align: center; margin-top: -2%;" tabindex="0">&copy; 2025 Naawi-Oodena. All rights reserved.</p>
+    </footer>
+</body>
+
+</html>

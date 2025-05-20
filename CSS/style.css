@@ -1,93 +1,159 @@
 h1 {
     font-size: 3.5rem;
+    /* Large heading*/
     font-weight: 500;
+    /* Medium but strong weight for readability */
     font-family: 'Oswald', sans-serif;
+    /* Consistent font */
 }
 
 p {
     font-size: 1.2rem;
+    /* Slightly large text for easy reading */
     font-family: 'Poppins', sans-serif;
-    font-weight: 100;
+    /* Clean font for body text */
 }
 
 .resources {
+    background-image: -webkit-linear-gradient(#5a659b, #1f2856);
+    /* Blue gradient for */
     background-image: linear-gradient(#5a659b, #1f2856);
     text-align: center;
+    /* Center all text and content within container */
     color: aliceblue;
+    /* Light text for contrast */
     text-decoration: 6px underline #1f28566f;
+    /* Subtle underline for emphasis */
     padding-top: 2%;
+    /* Space above content */
     padding-bottom: 1%;
+    /* Space below content */
     overflow: hidden;
+    /* Prevents content overflow */
 }
 
+/* Layout for resource links */
 .resources-link {
+    display: -webkit-flex;
+    /* Horizontal layout for resource cards */
     display: flex;
     justify-content: space-evenly;
+    /* Even spacing between cards */
     padding: 2% 0%;
+    /* Vertical padding for null space*/
     width: 100%;
+    /* Full width of container */
     filter: brightness(1);
+    /* Normal brightness by default */
 }
 
+.resources a {
+    color: #f0f0f0;
+    /* Light color for resource links */
+}
+
+.resources-link img {
+    border: none;
+}
+
+/* Each resource card */
 .resources-link>div {
     position: relative;
-    width: 250px;
-    height: 150px;
-}
-
-.resources-link>div img,
-iframe {
-    overflow: hidden;
-    animation: pulse 2s infinite, linear;
-    animation-delay: 0;
+    /* Allows positioning of elements */
+    max-height: 140px;
+    width: 100%;
+    max-width: 250px;
+    /* max width for responsiveness */
+    padding-bottom: 9.5%;
+    height: 0;
+    /* controlled by padding */
     border-radius: 5%;
-    width: 250px;
-    height: 150px;
     border: 5px solid #272e4f;
+    overflow: hidden;
+    animation: pulse 2s infinite linear;
+    /* Subtle pulsing animation */
     transition: filter 0.5s ease;
+    /* Smooth filter transitions */
 }
 
+/* Resource card titles overlay */
 .resources-link>div h1 {
     animation-delay: 0;
-    animation: width 2s infinite, linear;
+    animation: max-width 2s infinite linear;
+    /* Animated width for attention */
     position: absolute;
+    /* Overlay on image */
     top: 50%;
+    /* Center vertically */
     left: 51.7%;
+    /* Center horizontally (fine-tuned) */
     transform: translate(-50%, -50%);
+    /* Perfect centering */
     color: #272e4f;
+    /* Dark blue text for contrast */
     background-color: #f0f8ffc7;
-    width: 250px;
-    font-size: 150%;
+    /* Semi-transparent background so user can still see image */
+    font-size: 1.2rem;
+    /* Large, readable title */
     z-index: 10;
+    /* Ensure title is above image */
     margin: 0;
     pointer-events: none;
+    /* Prevents interaction */
+    padding: 2% 0 2% 0;
+    /* adjusts the height of the h1 */
 }
 
-@keyframes width {
+/* Animation for resources card title width */
+@keyframes max-width {
     0% {
-        width: 250px;
+        width: 100%;
     }
 
     50% {
-        width: 264px;
+        width: 105%;
     }
 
     100% {
-        width: 250px;
+        width: 100%;
     }
 }
 
+/* Hover effect for images and iframes */
 .resources-link>div img:hover,
 iframe:hover {
     filter: brightness(0.5);
+    /* Darken on hover*/
     cursor: pointer;
+    /* changes cursor to pointer*/
 }
 
+.resources-link>div a:focus {
+    filter: brightness(0.5);
+    /* Darken on hover*/
+    cursor: pointer;
+    /* changes cursor to pointer*/
+}
+
+/* Hover effect for resource card titles */
 .resources-link>div:hover h1 {
     color: aliceblue;
+    /* Light text on hover */
     background-color: #0a0f2485;
+    /* Darker background for contrast */
     transition: 0.3s ease;
+    /* Smooth transition */
 }
 
+
+#map:focus {
+    filter: brightness(0.5);
+    /* Darken on hover*/
+    cursor: pointer;
+    /* changes cursor to pointer*/
+}
+
+/* Pulse animation for resource images */
 @keyframes pulse {
     0% {
         transform: scale(1);
@@ -102,124 +168,231 @@ iframe:hover {
     }
 }
 
-
+/* Main navigation bar styles */
 #nav {
     background-color: #293570;
+    /* Deep blue for main color*/
     height: 80px;
+    /* Tall nav bar*/
     width: 100%;
+    /* Full width */
     margin: 0;
     padding: 0;
     font-family: "Oswald", sans-serif;
+    /* Consistent font */
     font-weight: 700;
+    /* Bolded */
     letter-spacing: 4px;
+    /* Spaced out letters for readability */
     font-size: 40px;
+    /* Large text in nav */
     position: relative;
+    /* For absolute positioning of logo */
+    display: -webkit-flex;
+    /* Flex layout for nav content */
     display: flex;
     justify-content: center;
+    /* Center nav items horizontally */
     align-items: center;
+    /* Center nav items vertically */
     color: #0a0f24;
+    /* Dark text for contrast */
 }
 
+/* Logo in navigation bar */
 #nav img {
     position: absolute;
+    /* Place logo independently */
     right: 3%;
+    /* Align logo to the right */
     width: auto;
-    height: 65px;
+    font: 1em;
+    background-color: #293570;
+    /* Match nav background */
+    color: #f0f0f0;
+    /* Light logo color */
+    height: 100%;
+    /* Consistent logo height */
+    max-height: 65px;
     border: none;
+    /* No border for clean look */
     border-radius: 0;
+    /* Square corners */
     transition: 0.5s ease;
+    /* Smooth scaling on hover */
     top: 12%;
+    /* Vertical alignment */
 }
 
+/* Logo hover effect */
 #nav img:hover {
     transform: scale(1.2);
+    /* Enlarge logo on hover */
     cursor: pointer;
+    /* Indicate interactivity */
 }
 
+/* Horizontal rule styling for section separation */
 hr {
     background-color: #293570;
+    /* Blue line for brand consistency */
     height: 20px;
+    /* Thick line for emphasis */
     width: 100%;
     margin-top: -0.5%;
+    /* Slightly overlap previous section */
     border: none;
+    /* Remove default border */
 }
 
+/* Secondary navigation bar (sticky) */
 #nav2 {
     display: grid;
+    /* Grid layout for equal columns */
     grid-template-columns: repeat(4, 1fr);
+    /* Four equal columns */
     height: 50px;
+    /* Shorter than main nav */
     width: 100%;
     margin: 0;
     padding: 0;
     background-color: #5a659b;
+    /* Lighter blue for contrast */
     color: #0a0f24;
+    /* Dark text */
     list-style: none;
+    /* Remove default list styling */
     text-align: center;
-    overflow: visible;
+    /* Center nav text */
+    overflow: hidden;
+    /* hides overflow*/
     position: sticky;
+    /* Sticks to top on scroll */
     align-items: stretch;
+    /* Stretch items to fill height */
     top: 0;
+    /* Stick to top of viewport */
     z-index: 1000;
+    /* Stay above all other content */
 }
 
+/* Navigation list items */
 #nav2 li {
     margin: 0;
     padding: 0;
+    display: -webkit-flex;
+    /* Flex for centering */
     display: flex;
     align-items: center;
+    /* Vertically center nav links */
     justify-content: center;
+    /* Horizontally center nav links */
     font-size: 1.1rem;
+    /* Slightly larger nav text */
     font-family: 'Poppins', serif;
+    /* Modern font for nav */
     height: 100%;
+    /* Fill nav bar height */
 }
 
+/* Hover and focus effect for nav links (not active) */
 #nav2 a:hover:not(.active) {
     background-color: #dcdada42;
+    /* Subtle background on hover when not active(when not on current page)*/
 }
 
+#nav2 a:focus:not(.active) {
+    background-color: #dcdada42;
+    /* Same effect for keyboard navigation */
+}
+
+/* Active nav link styling */
 #nav2 a.active {
     background-color: #ffffffc2;
+    /* Highlight active page */
     color: #000000;
+    /* Dark text for contrast */
 }
 
+/* Nav links inside list items */
 #nav2 li a {
+    display: -webkit-flex;
+    /* Flex for centering */
     display: flex;
     align-items: center;
+    /* Vertically center */
     justify-content: center;
+    /* Horizontally center */
     height: 100%;
+    /* Full height */
     width: 100%;
+    /* Full width */
     padding: 0;
     text-decoration: none;
+    /* Remove underline */
     color: black;
+    /* Standard link color */
 }
 
+/* Body background and spacing */
 body {
     background-color: #f0f0f0;
+    /* Light background for readability to not hurt eyes */
     margin: 0;
     padding: 0;
 }
 
+/* Social media follow section */
+.follow {
+    margin-top: 10%;
+    /* Space above social icons */
+    display: -webkit-flex;
+    /* Horizontal layout */
+    display: flex;
+    justify-content: center;
+    /* Center icons within container*/
+    gap: 4%;
+    /* Space between icons */
+}
+
+/* Social media icon styling */
+.follow img {
+    border-radius: 10% !important;
+    /* Rounded icons for friendly look */
+    width: 50px !important;
+    /* Consistent icon size */
+}
 
 .bottomh1 {
-    margin: 0% 0% 0% 2%;
+    margin: -20% 0% 0% 2%;
+    /* Left margin for h1 alignment */
 }
 
-.bottom{
-    margin: 0% 0% 0% 2%;
+.bottom {
+    margin: 0% 0% -5% 2%;
+    /* Left margin for section alignment */
 }
 
+/* Colored section for emphasis and balance */
 .colored {
     background-color: #293570;
+    /* main color*/
     height: fit-content;
+    /* Height adjusts to content */
     width: 100%;
     color: aliceblue;
+    /* Light text for contrast */
     align-content: center;
+    /* Center content vertically */
     padding: 0% 0% 4% 0%;
+    /* Bottom padding for space */
     text-align: left;
+    /* Left-align text */
     margin: -10px 0px 0px 0px;
+    /* Negative top margin for overlap */
 }
 
-
+/* Padding for paragraphs in colored section */
 .colored p {
     padding: 1%;
 }
@@ -228,44 +401,74 @@ body {
 * {
     margin: 0;
     letter-spacing: 3px;
+    /* Spaced out letters for style */
     line-height: 1.6;
+    /* Comfortable line spacing */
     animation-delay: 0ms;
+    /* No animation delay by default */
 }
-
 
 article {
-    justify-items: center;
     margin-top: 10%;
-    padding: 0% 8% 8% 8%;
+    /* Space above articles */
+    padding: 0% 1% 0% 1%;
+    /* Sides and bottom padding */
+    margin: 10% 8% 8% 8%;
 }
 
+/* Footer styling for site-wide consistency */
 footer {
     background-color: #293570;
+    /*main color */
     border-top: 15px solid #1a2248;
+    /* Thick top border for separation */
     text-align: center;
+    /* Center all footer content */
     color: aliceblue;
+    /* Light text for contrast */
     padding: 40px 20px 0px 20px;
+    /* Generous padding for content */
     height: 40px;
+    /* height by default so it only shows opening text */
     overflow: hidden;
-    font-family: "Oswald", sans-serif;
+    /* Hide overflow until expanded */
+    font-size: 1.2rem;
+    /* Larger footer text */
+    font-family: 'Oswald', sans-serif;
+    /* Consistent font */
     transition: height 0.7s;
+    /* Smooth expand/collapse */
+}
+
+/* Footer paragraphs styling */
+.footer p {
+    font-size: 1.2rem;
 }
 
 .open-footer {
     justify-content: center;
+    /* Center content*/
     font-size: 30px;
+    /* Large, visible h1 text */
     align-items: center;
     margin-top: -2%;
+    /* Overlap previous section */
     margin-bottom: 3%;
+    /* Space below prompt */
 }
 
+/* Up arrow animation for expand prompt */
 .fa-arrow-up {
     margin-left: 1%;
     animation: bounce 1s infinite;
+    /* Bouncing animation for attention */
     color: aliceblue;
+    /* Light color for visibility */
     font-size: 25px;
+    /* Large icon */
 }
 
+/* Keyframes for bounce animation */
 @keyframes bounce {
 
     0%,
@@ -280,94 +483,212 @@ footer {
 
 .footer-section ul {
     list-style: none;
-    margin: 0;
+    /* Remove default bullets */
+    padding: 0;
+}
+
+.footer-section li {
+    text-align: center;
 }
 
 .footer {
+    display: -webkit-flex;
+    /* Horizontal layout */
     display: flex;
     justify-content: space-evenly;
+    /* Even spacing between sections */
 }
 
-footer:hover {
-    height: 400px;
+/* Footer expands on hover */
+footer:hover,
+footer:focus-within
+
+/*focuses the content inside, keeping the footer open*/
+    {
+    height: 370px;
+    /* Expand to show all content */
     bottom: 0;
     position: sticky;
+    /* Stick to bottom of viewport */
 }
 
+
+/* Individual footer section styling */
 .footer-section {
     width: 25%;
+    /* Each section takes up 25% */
     text-align: center;
     margin: 10px;
 }
 
+/* Footer section headings */
 .footer-section h3 {
     margin-bottom: 10px;
     border-bottom: 1px solid aliceblue;
+    /* Underline for separation */
     padding-bottom: 5px;
+    font-size: 1.4rem;
 }
 
+/* Footer links */
 .footer-section a {
     color: aliceblue;
+    /* Light color for contrast */
     text-decoration: none;
+    /* No underline by default */
 }
 
+/* Footer link hover effect */
 .footer-section a:hover {
     text-decoration: underline;
+    /* Underline on hover for clarity */
+    cursor: pointer;
+    /* Indicate interactivity */
 }
 
+/* Footer image hover effect */
+.footer-section img:hover {
+    transform: scale(1.2);
+    /*enlarges image */
+    cursor: pointer;
+    /* Changes cursor to pointer*/
+}
+
+/* Footer section image styling */
 .footer-section img {
-    width: 60%;
+    width: 70%;
+    /* Sets image width to 70% of its container */
     justify-self: center;
+    /* ceners conent horizontally*/
     display: flex;
+    /* Makes image a flex container */
+    margin-top: -10px;
+    /* Pulls image upward by 10px */
+    background-color: #293570;
+    /* Sets background color for alt text*/
+    font-size: 1rem;
+    /* Sets font size for alt text*/
     border: none;
+    /* Removes any default border */
     border-radius: 0;
+    /* Makes image edges sharp (no border) */
+    -webkit-transition: transform 0.5s ease;
+    /* Enables smooth transform in Safari/old Chrome */
+    -moz-transition: transform 0.5s ease;
+    /* Enables smooth transform in Firefox */
+    -o-transition: transform 0.5s ease;
+    /* Enables smooth transform in older Opera */
+    transition: transform 0.5s ease;
+    /* Standard transition for modern browsers */
 }
 
+/* General image styling */
 img {
     border: 5px solid #1c244b;
+    /* Adds dark blue border */
     border-radius: 10px;
+    /* Rounds corners */
+    text-align: center;
+    /*for the alt text*/
+    background-color: #212953;
+    /* Sets image background-color for alt text*/
+    color: white;
+    /*alt text color*/
 }
 
+/* Image container styling */
 #image {
     width: 100%;
+    /* Full width of its container */
     height: auto;
+    /* Height adjusts based on content */
+    display: -webkit-box;
+    /* Old Safari/Android flexbox support */
+    display: -ms-flexbox;
+    /* IE10+ support for flexbox */
     display: flex;
+    /* Modern flexbox — standard in all browsers */
     justify-self: center;
     z-index: 0;
+    /* sends behind overlapping elements */
+    min-height: 500px;
+    /* Sets a minimum height */
+    background-color: #293570;
+    /* Sets background color */
 }
 
+/* Image inside #image */
 #image img {
+    color: #000000;
+    /* Text color for alt text*/
+    font-size: 2rem;
+    /* alt text size*/
+    background-color: #f0f0f0;
+    /* Light background for alt text*/
     border: none;
+    /* Removes border */
+    -webkit-filter: brightness(.5);
+    /* Reduces brightness — Safari/Chrome */
+    -moz-filter: brightness(.5);
+    /* Reduces brightness Firefox */
+    -o-filter: brightness(.5);
+    /* Reduces brightness Older Opera */
     filter: brightness(.5);
+    /* Reduces brightness, Standard — darkens the image */
     border-radius: 0;
+    /* Square corners  (no border)*/
 }
 
+/* Article section layout */
 .article {
     margin: 10% 8% 8% 8%;
+    /* Responsive margin around section */
+    display: -webkit-box;
+    /* Old Safari/Chrome flexbox */
+    display: -ms-flexbox;
+    /* IE10+ flexbox support */
     display: flex;
+    /* Standard flexbox for layout */
     align-items: center;
+    /* Vertically centers content in container */
     justify-self: center;
+    /* centers itself*/
 }
 
-
+/* Article heading */
 .article h1 {
-    margin-bottom: 2%;
+    margin-bottom: 1%;
+    /* Space below heading */
 }
+
 
 .article-img {
     margin-right: 40px;
+    /* Space to the right of image */
     margin-left: 20px;
+    /* Space to the left */
     width: 300px;
+    /* Fixed width for image */
 }
 
+/* Title overlay styling */
 .title {
     z-index: 1;
+    /* Makes sure title appears above some elements */
     position: absolute;
+    /* Positioned relative to nearest positioned ancestor */
     font-size: 5vw;
+    /* Responsive font size based on viewport width */
     top: 54%;
+    /* Pushes title 54% from top of positioned ancestor */
     width: 100%;
+    /* Full width */
     justify-content: center;
+    /* Centers text horizontally in flex container */
     display: flex;
+    /* Flex container for centering */
     color: #ffffff;
+    /* White text */
     font-family: 'Oswald', sans-serif;
+    /* Uses Oswald font with sans-serif fallback */
 }

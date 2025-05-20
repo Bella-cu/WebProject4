@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!--
+        Meta tags for accessibility and responsive design.
+    -->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Naawi-Oodena.ca</title>
+    <!--
+        Linking to external stylesheet
+    -->
+    <link rel="stylesheet" href="/CSS/style.css" />
+        <link rel="icon" href="Images/logo.png" type="Images/png">
+    <link href="https://fonts.googleapis.com/css?family=Oswald:200,300,regular,500,600,700" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+    <style>
+        .article{
+            margin: 10% 1% -10% 1%;
+        }
+        .article img {
+            height: 330px; /* fixed image height */
+            width: 250px;  /* fixed image width*/
+        }
+
+        .campus {
+            display: flex; /* Enables flexbox layout */
+            justify-content: center; /* Centers the image horizontally */
+        }
+
+        .campus img {
+            margin-top: 5%; /* Space above the image for separation */
+            margin-bottom: 1%; /* Space below the image for separation */
+            width: 40%; /* Responsive width for large displays */
+            height: 300px; /* Fixed height for consistency */
+        }
+
+        #campus-txt {
+            display: flex; /* Flex layout for centering */
+            justify-self: center; /* Centers the text horizontally */
+            text-align: center; /* Centers the text within the element */
+            margin-bottom: 5%; /* Space below for separation */
+            padding: 3% 8% 1% 8%; /* Padding for layout */
+        }
+
+        #shopping-img {
+            display: flex; /* Flexbox for horizontal layout */
+            justify-content: center; /* Centers images horizontally */
+            margin-top: 9%; /* Space above the image row */
+            margin-bottom: 9%; /* Space below the image row */
+            gap: 2%; /* Space between each image */
+        }
+
+        #shopping p {
+            text-align: center; /* Centers the text for readability */
+            padding: 5% 8% 0 8%; /* Padding for layout and readability */
+            margin-top: -10%; /* Pulls the paragraph closer to the images above */
+            margin-bottom: 10%; /* Adds space below for separation */
+        }
+        .bottom h1{
+            margin-top: -15%;
+        }
+        .bottom .article-img{
+            margin-top: -45%;
+        }
+        .article{
+                margin: 15% 5% 8% 5%;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav id="nav">
+            <h1 tabindex="0">Naawi-Oodena</h1>
+            <a href="https://treaty1.ca/naawi-oodena/" target="_blank"
+                aria-label="Visit Naawi-Oodena at Treaty 1 website">
+                <img src="Images/logo.png" alt="Naawi-Oodena logo" tabindex="0" />
+            </a>
+        </nav>
+    </header>
+    <ul id="nav2">
+        <!--
+            Navigation bar for easy access to all main sections.
+        -->
+        <li><a href="/index.html" tabindex="0">Home</a></li>
+        <li><a href="/Lifestyle.html" tabindex="0">Lifestyle</a></li>
+        <li><a href="/business.html" tabindex="0" class="active">Business</a></li>
+        <li><a href="/contact.html" tabindex="0" >Contact</a></li>
+    </ul>
+
+    <figure id="image">
+        <!--
+            Image of the business center.
+        -->
+        <img src="Images/Business.png" tabindex="0" alt="Aerial view of Naawi-Oodena Business Centre" style="width:100%;" />
+    </figure>
+
+    <h1 class="title" tabindex="0">Business</h1>
+    <hr />
+
+<main>
+    <article class="article" tabindex="0">
+        <figure>
+            <!-- Shows a facility available for businesses. -->
+            <img class="article-img" src="Images/office.png"
+                alt="Office space inside Naawi-Oodena business center" tabindex="0" />
+        </figure>
+        <div class="what-text">
+            <h1 tabindex="0">Business In Naawi-Oodena</h1>
+            <p tabindex="0">
+                Naawi-Oodena features a growing business area that supports Indigenous entrepreneurship and local
+                economic development. The community includes shops, restaurants, and service-based businesses that
+                provide jobs and essential services while reflecting Indigenous culture and values. These businesses
+                help build a self-sustaining economy and offer a welcoming space for both residents and visitors.
+            </p>
+        </div>
+    </article>
+
+    <article class="article bottom" style="flex-direction: row-reverse;" tabindex="0">
+        <figure>
+            <!-- University building image. -->
+            <img class="article-img bottomimg" src="Images/Uni.png"
+                alt="University building representing education in Naawi-Oodena" tabindex="0" />
+        </figure>
+        <div class="what-text">
+            <h1 class="bottomh1" tabindex="0">Education in Naawi-Oodena</h1>
+            <p class="bottom" tabindex="0">
+                Naawi-Oodena supports education through culturally grounded programs and schools that
+                reflect Indigenous knowledge, languages, and traditions. The community emphasizes lifelong learning
+                by offering resources for students of all ages, including early childhood education, primary and
+                secondary schooling, and adult learning opportunities.
+            </p>
+        </div>
+    </article>
+
+    <section class="colored" aria-labelledby="campus-section" >
+        <div class="campus">
+            <!-- Cultural campus image. -->
+            <img tabindex="0" src="Images/Campus1.jpg" alt="Exterior of a cultural campus in Naawi-Oodena" tabindex="0" />
+        </div>
+        <p id="campus-txt" tabindex="0">
+            Naawi-Oodena is home to cultural campuses that preserve and share Indigenous
+            knowledge, language, and traditions. These spaces offer programs in history, art, storytelling, and
+            traditional practices. They host events and ceremonies, bringing people together to learn from Elders and Knowledge Keepers.
+        </p>
+    </section>
+
+    <section id="shopping" aria-labelledby="shopping-section" tabindex="0">
+        <div id="shopping-img">
+            <!-- Images of the variety of services and shops available. -->
+            <img src="Images/school.png" alt="Local school in Naawi-Oodena"  />
+            <img src="Images/business-inside.png" alt="Interior view of a local business in Naawi-Oodena"  />
+            <img src="Images/library.png" alt="Public library with books and computers"  />
+            <img src="Images/starbucks.png" alt="Starbucks coffee shop in the area" />
+            <img src="Images/3-business.png" alt="Row of three businesses in Naawi-Oodena"  />
+        </div>
+        <p id="shopping-section" tabindex="0">
+            Naawi-Oodena offers shops with handmade goods, cultural items, restaurants, cafés with traditional and
+            modern food, schools, a public library, health centers, and daycare. These services support a strong,
+            community-centered lifestyle.
+        </p>
+    </section>
+</main>
+
+    <hr />
+    <hr />
+    <section class="resources" aria-label="Additional resources section" tabindex="0">
+        <h1 tabindex="0">More Resources</h1>
+        <div class="resources-link">
+            <div id="events">
+                <h1>Events</h1>
+                <a href="https://treaty1.ca/event/4th-annual-anishinaabe-days-celebration/" target="_blank"
+                    aria-label="View details for the Anishinaabe Days Celebration" tabindex="0">
+                    <img src="Images/powwow.png" alt="Anishinaabe Days Celebration Powwow" />
+                </a>
+            </div>
+            <div id="developments">
+                <h1>Developments</h1>
+                <a href="https://treaty1.ca/wp-content/uploads/2021/11/Kapyong-Barracks-Master-Plan.pdf" target="_blank"
+                    aria-label="Read the Kapyong Barracks Master Plan (PDF)" tabindex="0">
+                    <img src="Images/development.png" alt="Kapyong Barracks Master Plan PDF" />
+                </a>
+            </div>
+            <div id="program">
+                <h1>Programs</h1>
+                <a href="https://treaty1.ca/wp-content/uploads/2024/03/Unlocking-Opportunities-at-Naawi-Oodena-Promo-Package-FINAL.pdf"
+                    target="_blank" aria-label="View Unlocking Opportunities Program Package PDF" tabindex="0">
+                    <img src="Images/program.png" alt="Unlocking Opportunities at Naawi-Oodena pdf" />
+                </a>
+            </div>
+            <div id="map" tabindex="0">
+                <h1>Location</h1>
+                <iframe title="Naawi-Oodena location on Google Maps" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d82316.15003631638!2d-97.207645!3d49.854112!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x52ea74eab82e68cb%3A0x4ffc4bf8a3a9cf2f!2sNaawi-Oodena%2C%20Winnipeg%2C%20MB!5e0!3m2!1sen!2sca!4v1747729267770!5m2!1sen!2sca" width="250" height="200" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+    </section>
+
+    <footer tabindex="0">
+        <div class="open-footer">Hover to expand<i class="fa-solid fa-arrow-up" aria-hidden="true"></i></div>
+        <div class="footer">
+            <div class="footer-section" tabindex="0">
+                <a href="https://treaty1.ca/naawi-oodena/" target="_blank" aria-label="Visit Naawi-Oodena homepage">
+                    <img src="Images/logo.png" alt="Naawi-Oodena logo" tabindex="0" />
+                </a>
+                <p style="text-align: center;" tabindex="0">Centre of the heart and community</p>
+            </div>
+            <div class="footer-section">
+                <h3 tabindex="0">Pages</h3>
+                <ul>
+                    <li><a href="/index.html" tabindex="0">Home</a></li>
+                    <li><a href="/Lifestyle.html" tabindex="0">Lifestyle</a></li>
+                    <li><a href="/business.html" tabindex="0">Business</a></li>
+                    <li><a href="/contact.html" tabindex="0">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-section" tabindex="0">
+                <h3 tabindex="0">Contact</h3>
+                <p>Email: <a href="mailto:naawi-oodena@gmail.com" tabindex="0">naawi-oodena@gmail.com</a>
+                </p>
+                <p tabindex="0">Phone: (204) 000 000</p>
+                <section class="follow">
+                    <a href="https://www.facebook.com" target="_blank" aria-label="Visit Naawi-Oodena on Facebook"
+                        tabindex="0">
+                        <img src="Images/facebook.png" alt="Facebook logo" />
+                    </a>
+                    <a href="https://www.instagram.com/" target="_blank" aria-label="Visit Naawi-Oodena on Instagram"
+                        tabindex="0">
+                        <img src="Images/instagram.png" alt="Instagram logo" />
+                    </a>
+                    <a href="https://www.linkedin.com/" target="_blank" aria-label="Visit Naawi-Oodena on LinkedIn"
+                        tabindex="0">
+                        <img src="Images/linkedin.png" alt="LinkedIn logo" />
+                    </a>
+                    <a href="https://x.com/" target="_blank" aria-label="Visit Naawi-Oodena on X (formerly Twitter)"
+                        tabindex="0">
+                        <img src="Images/insta.png" alt="X logo" />
+                    </a>
+                </section>
+            </div>
+        </div>
+        <p style="text-align: center; margin-top: -2%;" tabindex="0">&copy; 2025 Naawi-Oodena. All rights reserved.</p>
+    </footer>
+</body>
+
+</html>

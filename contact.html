@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!--
+        Meta tags for accessibility and responsive design.
+    -->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Naawi-Oodena.ca</title>
+    <!--
+        Linking to external stylesheet
+    -->
+    <link rel="stylesheet" href="/CSS/style.css" />
+    <link href="https://fonts.googleapis.com/css?family=Oswald:200,300,regular,500,600,700" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+    <link rel="icon" href="Images/logo.png" type="Images/png">
+    <style>
+        main {
+            margin: 5%;
+            /* Space around the main content */
+            padding: 2%;
+            /* Padding inside the main content */
+            overflow: hidden;
+            /* Prevents scrollbars from overflowing content */
+        }
+
+        .contact {
+            display: grid;
+            /* Enables grid layout */
+            grid-template-columns: repeat(2, 1fr);
+            /* Two equal columns */
+            gap: 5%;
+            /* Space between columns */
+        }
+
+        .contact img {
+            width: 100%;
+            /* Image fills the grid cell */
+            border: none;
+            /* No border for a clean look */
+            background-color: #f0f0f0;
+            /* Light background for alt text and img */
+            color: #0a0530;
+            /* color for alt text*/
+            font-size: 2rem;
+            /*font size for alt text */
+        }
+
+        .contact h1 {
+            margin-bottom: 20px;
+            /* Space below heading */
+            text-decoration: underline;
+            /* Underline for emphasis */
+        }
+
+        form {
+            display: flex;
+            /* Flexbox layout */
+            flex-direction: column;
+            /* Stack vertically */
+        }
+
+        label {
+            margin: 10px 0 5px;
+            /* Space above and below labels */
+            color: #444;
+            /* Dark gray for readability */
+            font-size: 1.2rem;
+            /* Larger font for readability */
+            font-family: 'Poppins', sans-serif;
+            /* Modern font */
+            font-weight: bold;
+            /* Bold for emphasis */
+        }
+
+        input,
+        textarea {
+            padding: 12px;
+            /* space for typing area */
+            border: 1px solid #ddd;
+            /* Light border for clarity */
+            border-radius: 5px;
+            /* Rounded corners for modern look */
+            margin-bottom: 15px;
+            /* Space below each field */
+            font-size: 16px;
+            /* Readable font size */
+            resize: vertical;
+            /* Allow vertical resizing only for textarea */
+        }
+
+        button {
+            background-color: #293570;
+            /* Main brand color */
+            color: white;
+            /* White text for contrast */
+            padding: 12px 20px;
+            /* Large clickable area */
+            border: 3px solid #0a0530;
+            /* border for definition */
+            border-radius: 5px;
+            /* Rounded corners */
+            cursor: pointer;
+            /* Pointer cursor for interactivity */
+            width: 100%;
+            /* Full width button */
+            font-weight: bold;
+            /* Bold text for emphasis */
+            font-size: 16px;
+            /* Readable font size */
+            box-shadow: 0 4px 10px #6c75a1;
+            /* Subtle shadow for depth */
+            transition: transform 0.5s ease, background-color 1s ease;
+            /* Smooth transition to grow */
+        }
+
+        /*Enlarges and darkens the button on hover*/
+        button:hover {
+            transform: scale(1.1);
+            /* Slightly enlarges button */
+            background-color: #1d254c;
+            /* becomes darker shade on hover */
+        }
+
+        #message {
+            min-height: 100px;
+            /* Minimum height for textarea  so it is comfortable to write in*/
+        }
+
+        .stars {
+            font-size: 3em;
+            /* Large stars for easy clicking */
+            margin: -2% 0 3% 0;
+            /* Space above and below stars */
+        }
+
+        .star {
+            cursor: pointer;
+            /* Pointer cursor for interactivity */
+            margin-right: 2%;
+            /* Space between stars */
+            color: #959494;
+            /* Default star color before clicked*/
+            transition: color 0.3s ease, transform 0.2s ease;
+            /* Smooth transition */
+        }
+
+        /*Highlights the star on hover for feedback. */
+        .star:hover {
+            transform: scale(1.2);
+            /* Enlarges star on hover */
+            color: gold;
+            /* Gold color on hover */
+        }
+
+        .star:focus {
+            transform: scale(1.2);
+            /* Enlarges star on hover */
+            color: gold;
+            /* Gold color on hover */
+        }
+
+        /* Highlights selected stars in gold */
+        .star.selected {
+            color: gold;
+            /* Gold color for selected stars */
+            animation: pop 0.3s ease;
+            /* Pop animation */
+        }
+
+        /* Animation for the star selection effect. */
+        @keyframes pop {
+            0% {
+                transform: scale(1);
+            }
+
+            50% {
+                transform: scale(1.3);
+            }
+
+            100% {
+                transform: scale(1);
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav id="nav">
+            <h1 tabindex="0">Naawi-Oodena</h1>
+            <a href="https://treaty1.ca/naawi-oodena/" target="_blank"
+                aria-label="Visit Naawi-Oodena at Treaty 1 website">
+                <img src="Images/logo.png" alt="Naawi-Oodena logo" tabindex="0" />
+            </a>
+        </nav>
+    </header>
+    <ul id="nav2">
+        <!-- Navigation bar for easy access to all main sections -->
+        <li><a href="/index.html" tabindex="0">Home</a></li>
+        <li><a href="/Lifestyle.html" tabindex="0">Lifestyle</a></li>
+        <li><a href="/business.html" tabindex="0">Business</a></li>
+        <li><a href="/contact.html" tabindex="0" class="active">Contact</a></li>
+    </ul>
+    <main>
+        <div class="contact">
+            <div>
+                <h1>Any Questions?</h1>
+                <!-- Contact form for user feedback and questions -->
+                <form class="form" action="thankyou.html" method="GET">
+                    <!-- Collects the user's full name for personalized responses. -->
+                    <label for="name">Full Name</label>
+                    <input tabindex="0" type="text" name="fullname" id="name" placeholder="What's your full name?"
+                        required aria-label="Full Name" />
+
+                    <!-- Allows me to contact the user with a reply. -->
+                    <label for="email">Email address</label>
+                    <input tabindex="0" type="email" id="email" name="email" placeholder="you@example.com" required
+                        aria-label="Email Address" />
+
+                    <!--Users can write questions, comments, or suggestions here. -->
+                    <label for="feedback">Any Feedback?</label>
+                    <textarea tabindex="0" id="message" name="feedback" placeholder="Write feedback and questions here"
+                        required aria-label="Feedback"></textarea>
+
+                    <!-- Lets users rate their experience from 1 to 5 stars. Each star is clickable and accessible. -->
+                    <label for="star">Rate your experience</label>
+                    <div class="stars" id="rating-stars" aria-label="Star rating from 1 to 5">
+                        <!-- Each star represents a rating value. -->
+                        <span tabindex="0" class="star" data-value="1" aria-label="1 star">&#9733;</span>
+                        <span tabindex="0" class="star" data-value="2" aria-label="2 stars">&#9733;</span>
+                        <span tabindex="0" class="star" data-value="3" aria-label="3 stars">&#9733;</span>
+                        <span tabindex="0" class="star" data-value="4" aria-label="4 stars">&#9733;</span>
+                        <span tabindex="0" class="star" data-value="5" aria-label="5 stars">&#9733;</span>
+                    </div>
+
+                    <!-- Sends the user to thank you page -->
+                    <button type="submit">Submit</button>
+                </form>
+            </div>
+            <!-- Naawi-Oodena Logo -->
+            <img src="Images/logo.png" alt="Naawi-Oodena Logo" />
+        </div>
+    </main>
+    <hr />
+    <hr />
+
+    <section class="resources" aria-label="Additional resources section" tabindex="0">
+        <h1 tabindex="0">More Resources</h1>
+        <div class="resources-link">
+            <div id="events">
+                <h1>Events</h1>
+                <a href="https://treaty1.ca/event/4th-annual-anishinaabe-days-celebration/" target="_blank"
+                    aria-label="View details for the Anishinaabe Days Celebration" tabindex="0">
+                    <img src="Images/powwow.png" alt="Anishinaabe Days Celebration Powwow" />
+                </a>
+            </div>
+            <div id="developments">
+                <h1>Developments</h1>
+                <a href="https://treaty1.ca/wp-content/uploads/2021/11/Kapyong-Barracks-Master-Plan.pdf" target="_blank"
+                    aria-label="Read the Kapyong Barracks Master Plan (PDF)" tabindex="0">
+                    <img src="Images/development.png" alt="Kapyong Barracks Master Plan PDF" />
+                </a>
+            </div>
+            <div id="program">
+                <h1>Programs</h1>
+                <a href="https://treaty1.ca/wp-content/uploads/2024/03/Unlocking-Opportunities-at-Naawi-Oodena-Promo-Package-FINAL.pdf"
+                    target="_blank" aria-label="View Unlocking Opportunities Program Package PDF" tabindex="0">
+                    <img src="Images/program.png" alt="Unlocking Opportunities at Naawi-Oodena pdf" />
+                </a>
+            </div>
+            <div id="map" tabindex="0">
+                <h1>Location</h1>
+                <iframe title="Naawi-Oodena location on Google Maps"
+                    src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d82316.15003631638!2d-97.207645!3d49.854112!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x52ea74eab82e68cb%3A0x4ffc4bf8a3a9cf2f!2sNaawi-Oodena%2C%20Winnipeg%2C%20MB!5e0!3m2!1sen!2sca!4v1747729267770!5m2!1sen!2sca"
+                    width="250" height="200" style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+    </section>
+
+    <footer tabindex="0">
+        <div class="open-footer">Hover to expand<i class="fa-solid fa-arrow-up" aria-hidden="true"></i></div>
+        <div class="footer">
+            <div class="footer-section" tabindex="0">
+                <a href="https://treaty1.ca/naawi-oodena/" target="_blank" aria-label="Visit Naawi-Oodena homepage">
+                    <img src="Images/logo.png" alt="Naawi-Oodena logo" tabindex="0" />
+                </a>
+                <p style="text-align: center;" tabindex="0">Centre of the heart and community</p>
+            </div>
+            <div class="footer-section">
+                <h3 tabindex="0">Pages</h3>
+                <ul>
+                    <li><a href="/index.html" tabindex="0">Home</a></li>
+                    <li><a href="/Lifestyle.html" tabindex="0">Lifestyle</a></li>
+                    <li><a href="/business.html" tabindex="0">Business</a></li>
+                    <li><a href="/contact.html" tabindex="0">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-section" tabindex="0">
+                <h3 tabindex="0">Contact</h3>
+                <p>Email: <a href="mailto:naawi-oodena@gmail.com" tabindex="0">naawi-oodena@gmail.com</a>
+                </p>
+                <p tabindex="0">Phone: (204) 000 000</p>
+                <section class="follow">
+                    <a href="https://www.facebook.com" target="_blank" aria-label="Visit Naawi-Oodena on Facebook"
+                        tabindex="0">
+                        <img src="Images/facebook.png" alt="Facebook logo" />
+                    </a>
+                    <a href="https://www.instagram.com/" target="_blank" aria-label="Visit Naawi-Oodena on Instagram"
+                        tabindex="0">
+                        <img src="Images/instagram.png" alt="Instagram logo" />
+                    </a>
+                    <a href="https://www.linkedin.com/" target="_blank" aria-label="Visit Naawi-Oodena on LinkedIn"
+                        tabindex="0">
+                        <img src="Images/linkedin.png" alt="LinkedIn logo" />
+                    </a>
+                    <a href="https://x.com/" target="_blank" aria-label="Visit Naawi-Oodena on X (formerly Twitter)"
+                        tabindex="0">
+                        <img src="Images/insta.png" alt="X logo" />
+                    </a>
+                </section>
+            </div>
+        </div>
+        <p style="text-align: center; margin-top: -2%;" tabindex="0">&copy; 2025 Naawi-Oodena. All rights reserved.</p>
+    </footer>
+    <script>
+        const stars = document.querySelectorAll('.star');
+
+        stars.forEach(star => {
+            // Handle mouse click
+            star.addEventListener('click', selectStar);
+
+            // Handle keyboard events (Enter or Space)
+            star.addEventListener('keydown', (e) => {
+                if (e.key === 'Enter' || e.key === ' ') {
+                    e.preventDefault(); // Prevent page scroll on spacebar
+                    selectStar.call(star);
+                }
+            });
+        });
+
+        function selectStar() {
+            const value = parseInt(this.getAttribute('data-value'));
+
+            // Remove 'selected' from all stars
+            stars.forEach(s => s.classList.remove('selected'));
+
+            // Add 'selected' to stars up to and including the clicked one
+            for (let i = 0; i < value; i++) {
+                stars[i].classList.add('selected');
+            }
+        }
+    </script>
+</body>
+
+</html>
