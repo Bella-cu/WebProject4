@@ -217,6 +217,7 @@ iframe:hover {
 
 /* Main navigation bar styles */
 #nav {
+    overflow: hidden;
     background-color: #293570;
     /* Deep blue for main color*/
     height: 80px;
