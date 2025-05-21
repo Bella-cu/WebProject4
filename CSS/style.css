@@ -1,3 +1,21 @@
+/*
+Multi-line CSS comment about the color scheme.
+
+Color Family: Analogus
+
+Primary Color: Warm Red – #D9534F  
+Secondary Color: Rusty Orange – #F0AD4E 
+Accent Color 1: Golden Yellow – #FFD966 
+Neutral Color 2: Soft Brown – #A67C52 
+Neutral Color 3: Sandy Beige – #F5E8C7 
+
+I chose this Analogous mixture of colors because they represent the connection to land when talking about treaties.
+The colors are warm, natural and respectful, which reflect the treaties more naturally as opposed to using brighter shades,
+which would take away from audiences ideal of an “authentic” website.
+The warm red and rusty orange stand out in a calm way while the golden yellow and soft brown add variation and depth without being distracting,
+and lastly the sandy beige as the background ties everything together as it's not too light as just white,
+and not too dark but somewhere in the middle where it complements the other colors/shades of the website.
+*/
 h1 {
     font-size: 3.5rem;
     /* Large heading*/
@@ -12,6 +30,30 @@ p {
     /* Slightly large text for easy reading */
     font-family: 'Poppins', sans-serif;
     /* Clean font for body text */
+}
+
+.source {
+    text-decoration: underline !important;
+    /* removes the underline */
+    font: .9em sans-serif;
+    transition: font-size 0.3s ease;
+    /* Smooth transition for font size */
+}
+
+.footer-source p {
+    padding-top: 10px;
+}
+
+#pages-source {
+    padding-top: 7%;
+}
+
+.source:hover {
+    text-decoration: underline;
+    /* adds underline on hover */
+    color: #cdd6de;
+    font-size: 1em;
+    /* Slightly larger text on hover */
 }
 
 .resources {
@@ -36,6 +78,7 @@ p {
 .resources-link {
     display: -webkit-flex;
     /* Horizontal layout for resource cards */
+    display: -ms-flexbox;
     display: flex;
     justify-content: space-evenly;
     /* Even spacing between cards */
@@ -122,6 +165,10 @@ p {
 /* Hover effect for images and iframes */
 .resources-link>div img:hover,
 iframe:hover {
+    -webkit-filter: brightness(0.5);
+    -moz-filter: brightness(0.5);
+    -ms-filter: brightness(0.5);
+    -o-filter: brightness(0.5);
     filter: brightness(0.5);
     /* Darken on hover*/
     cursor: pointer;
@@ -347,7 +394,7 @@ body {
     margin-top: 10%;
     /* Space above social icons */
     display: -webkit-flex;
-    /* Horizontal layout */
+    display: -ms-flexbox;
     display: flex;
     justify-content: center;
     /* Center icons within container*/
@@ -416,7 +463,7 @@ article {
     margin: 10% 8% 8% 8%;
 }
 
-/* Footer styling for site-wide consistency */
+/* Footer styling */
 footer {
     background-color: #293570;
     /*main color */
@@ -468,7 +515,49 @@ footer {
     /* Large icon */
 }
 
-/* Keyframes for bounce animation */
+/*
+    Keyframes for bounce animation with vendor prefixes
+    -webkit-keyframes: Chrome, Safari, newer Opera, iOS, Android
+    -moz-keyframes: Firefox
+    -o-keyframes: Old Opera
+    keyframes: Standard for modern browsers
+*/
+@-webkit-keyframes bounce {
+
+    0%,
+    100% {
+        -webkit-transform: translateY(-10px);
+    }
+
+    50% {
+        -webkit-transform: translateY(2px);
+    }
+}
+
+@-moz-keyframes bounce {
+
+    0%,
+    100% {
+        -moz-transform: translateY(-10px);
+    }
+
+    50% {
+        -moz-transform: translateY(2px);
+    }
+}
+
+@-o-keyframes bounce {
+
+    0%,
+    100% {
+        -o-transform: translateY(-10px);
+    }
+
+    50% {
+        -o-transform: translateY(2px);
+    }
+}
+
 @keyframes bounce {
 
     0%,
@@ -493,23 +582,25 @@ footer {
 
 .footer {
     display: -webkit-flex;
-    /* Horizontal layout */
+    /* Chrome, Safari, Opera */
+    display: -ms-flexbox;
+    /* IE10+ */
     display: flex;
+    /* Standard */
     justify-content: space-evenly;
     /* Even spacing between sections */
 }
 
 /* Footer expands on hover */
 footer:hover,
-footer:focus-within
-
-/*focuses the content inside, keeping the footer open*/
-    {
-    height: 370px;
+footer:focus-within {
+    height: 400px;
     /* Expand to show all content */
     bottom: 0;
+    position: -webkit-sticky;
+    /* Safari */
     position: sticky;
-    /* Stick to bottom of viewport */
+    /* Standard */
 }
 
 
@@ -548,6 +639,10 @@ footer:focus-within
 
 /* Footer image hover effect */
 .footer-section img:hover {
+    -webkit-transform: scale(1.2);
+    -moz-transform: scale(1.2);
+    -ms-transform: scale(1.2);
+    -o-transform: scale(1.2);
     transform: scale(1.2);
     /*enlarges image */
     cursor: pointer;
@@ -572,14 +667,16 @@ footer:focus-within
     /* Removes any default border */
     border-radius: 0;
     /* Makes image edges sharp (no border) */
-    -webkit-transition: transform 0.5s ease;
-    /* Enables smooth transform in Safari/old Chrome */
-    -moz-transition: transform 0.5s ease;
-    /* Enables smooth transform in Firefox */
-    -o-transition: transform 0.5s ease;
-    /* Enables smooth transform in older Opera */
+    -webkit-transition: -webkit-transform 0.5s ease;
+    /* Chrome, Safari, Opera */
+    -moz-transition: -moz-transform 0.5s ease;
+    /* Firefox */
+    -ms-transition: -ms-transform 0.5s ease;
+    /* IE10+ */
+    -o-transition: -o-transform 0.5s ease;
+    /* Old Opera */
     transition: transform 0.5s ease;
-    /* Standard transition for modern browsers */
+    /* Standard */
 }
 
 /* General image styling */
@@ -628,11 +725,9 @@ img {
     border: none;
     /* Removes border */
     -webkit-filter: brightness(.5);
-    /* Reduces brightness — Safari/Chrome */
     -moz-filter: brightness(.5);
-    /* Reduces brightness Firefox */
+    -ms-filter: brightness(.5);
     -o-filter: brightness(.5);
-    /* Reduces brightness Older Opera */
     filter: brightness(.5);
     /* Reduces brightness, Standard — darkens the image */
     border-radius: 0;
